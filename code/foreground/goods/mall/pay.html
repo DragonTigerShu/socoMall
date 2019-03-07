@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,target-densitydpi=high-dpi,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <html class=" landscape min-width-240px min-width-320px min-width-480px min-width-768px min-width-1024px">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="Keywords" content="速珂,速珂电动车,SOCO,SOCO电动车,速珂智能,速珂官网,速珂网址,SOCO官网,TS800R,TS1200R,TS电动车,SOCO TS,TS,跨骑,锂电">
+    <title>速珂支付宝支付</title>
+</head>
+<body>
+<div id="pay">速珂带你去支付宝支付</div>
+</body>
+
+<script>
+    window.onload = function (){
+        var html = localStorage.getItem("alipay");
+        var divObj = document.getElementById("pay");
+        if(html==''||html==null){
+            alert('速珂提示：支付遇到意外的问题而关闭');
+            document.write('速珂提示：支付遇到意外的问题而关闭');
+        }else{
+            document.write(html);
+        }
+    }
+</script>
+</html>
